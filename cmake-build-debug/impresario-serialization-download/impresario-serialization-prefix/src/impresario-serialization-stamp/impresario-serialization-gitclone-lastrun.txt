@@ -1,3 +1,0 @@
-repository='git@github.com:impresario-systems/impresario-serialization.git'
-module=''
-tag='origin'

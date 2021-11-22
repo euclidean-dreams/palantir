@@ -1,1 +1,0 @@
-/usr/bin/c++  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -g -rdynamic CMakeFiles/flathash.dir/src/flathash.cpp.o -o flathash 
