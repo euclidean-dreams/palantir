@@ -1,0 +1,403 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="palantir"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\flatbuffers-src\;CMake Files\cmake-build-debug\flatbuffers-src\CMake\;CMake Files\cmake-build-debug\impresario-serialization-src\;CMake Files\cmake-build-debug\impresario-serialization-src\lib\;CMake Files\cmake-build-debug\impresario-serialization-src\lib\cmake-utils\;CMake Files\cmake-build-debug\impresario-utils-src\;CMake Files\cmake-build-debug\impresario-utils-src\lib\;CMake Files\cmake-build-debug\impresario-utils-src\lib\cmake-utils\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\usr\local\share\;CMake Files\..\..\..\..\..\..\usr\local\share\cmake\;CMake Files\..\..\..\..\..\..\usr\local\share\cmake\cppzmq\;CMake Files\..\..\..\..\..\..\usr\local\share\cmake\cppzmq\libzmq-pkg-config\;CMake Files\..\..\..\..\..\..\usr\lib\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\;CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\;CMake Files\lib\;CMake Files\lib\cmake-utils\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package">
+				<Option working_dir="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 package"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="palantir">
+				<Option output="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/palantir" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/palantir"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/src"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/include"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-src/include"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 palantir"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="palantir/fast">
+				<Option output="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/palantir" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/palantir"/>
+					<Add directory="/usr/include/SDL2"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/src"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/include"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-src/include"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 palantir/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="package_source">
+				<Option working_dir="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 package_source"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="impresario-utils">
+				<Option output="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build/libimpresario-utils.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/include"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-src/include"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include"/>
+					<Add directory="/usr/include/pgm-5.2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 impresario-utils"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="impresario-utils/fast">
+				<Option output="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build/libimpresario-utils.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/include"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-src/include"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include"/>
+					<Add directory="/usr/include/pgm-5.2"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 impresario-utils/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatbuffers">
+				<Option output="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build/libflatbuffers.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/grpc"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatbuffers"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="flatbuffers/fast">
+				<Option output="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build/libflatbuffers.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DFLATBUFFERS_LOCALE_INDEPENDENT=1"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include"/>
+					<Add directory="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/grpc"/>
+					<Add directory="/usr/include/c++/9"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/9"/>
+					<Add directory="/usr/include/c++/9/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/9/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 flatbuffers/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include/flatbuffers/base.h">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include/flatbuffers/flatbuffers.h">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include/flatbuffers/flexbuffers.h">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include/flatbuffers/hash.h">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include/flatbuffers/idl.h">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include/flatbuffers/minireflect.h">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include/flatbuffers/reflection.h">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include/flatbuffers/reflection_generated.h">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include/flatbuffers/registry.h">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include/flatbuffers/stl_emulation.h">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include/flatbuffers/util.h">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/idl_gen_text.cpp">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/idl_parser.cpp">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/reflection.cpp">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/util.cpp">
+			<Option target="flatbuffers"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/include/ImpresarioUtils.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/Circlet.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/Circlet.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/Circulable.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/InvalidDeserializationException.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/NetworkProxy.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/NetworkProxy.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/NetworkSocket.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/NetworkSocket.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/NonCopyable.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/Packet.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/Packet.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/PacketCollection.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/PacketCollection.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/PacketReceiver.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/PacketReceiver.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/Point.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/Point.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/RandomNumberGenerator.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/RandomNumberGenerator.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/SerializedData.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/SerializedData.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/Time.cpp">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/src/Time.h">
+			<Option target="impresario-utils"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/src/Constants.h">
+			<Option target="palantir"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/src/Palantir.cpp">
+			<Option target="palantir"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/src/Palantir.h">
+			<Option target="palantir"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/src/SDLFailure.h">
+			<Option target="palantir"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/src/main.cpp">
+			<Option target="palantir"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\flatbuffers-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/CMake/BuildFlatBuffers.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\flatbuffers-src\CMake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/CMake/Version.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\flatbuffers-src\CMake\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\impresario-serialization-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-src/lib/cmake-utils/dependency-downloader.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\impresario-serialization-src\lib\cmake-utils\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-src/lib/cmake-utils/dependency-integrator.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\impresario-serialization-src\lib\cmake-utils\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\impresario-utils-src\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/lib/cmake-utils/dependency-downloader.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\impresario-utils-src\lib\cmake-utils\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-src/lib/cmake-utils/dependency-integrator.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\impresario-utils-src\lib\cmake-utils\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/../../../../../../usr/local/share/cmake/cppzmq/cppzmqConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\cmake\cppzmq\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/../../../../../../usr/local/share/cmake/cppzmq/cppzmqConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\cmake\cppzmq\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/../../../../../../usr/local/share/cmake/cppzmq/cppzmqTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\cmake\cppzmq\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/../../../../../../usr/local/share/cmake/cppzmq/libzmq-pkg-config/FindZeroMQ.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\local\share\cmake\cppzmq\libzmq-pkg-config\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/../../../../../../usr/lib/x86_64-linux-gnu/cmake/SDL2/sdl2-config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\usr\lib\x86_64-linux-gnu\cmake\SDL2\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/lib/cmake-utils/dependency-downloader.cmake">
+			<Option virtualFolder="CMake Files\lib\cmake-utils\"/>
+		</Unit>
+		<Unit filename="/home/josiah/projects/code/impresario-systems/palantir/lib/cmake-utils/dependency-integrator.cmake">
+			<Option virtualFolder="CMake Files\lib\cmake-utils\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

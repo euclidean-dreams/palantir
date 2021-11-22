@@ -1,0 +1,1 @@
+/usr/bin/c++ -g CMakeFiles/palantir.dir/src/main.cpp.o CMakeFiles/palantir.dir/src/Palantir.cpp.o -o palantir  impresario-utils-build/libimpresario-utils.a -lzmq -lpthread -lSDL2 /usr/lib/x86_64-linux-gnu/libzmq.so flatbuffers-build/libflatbuffers.a 

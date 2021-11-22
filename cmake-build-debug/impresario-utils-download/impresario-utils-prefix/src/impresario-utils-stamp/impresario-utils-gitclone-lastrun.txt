@@ -1,0 +1,3 @@
+repository='git@github.com:impresario-systems/impresario-utils.git'
+module=''
+tag='origin'

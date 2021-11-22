@@ -1,0 +1,22 @@
+[
+{
+  "directory": "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include -I/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/grpc  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -g -Wold-style-cast -std=gnu++14 -o CMakeFiles/flatbuffers.dir/src/idl_parser.cpp.o -c /home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/idl_parser.cpp",
+  "file": "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/idl_parser.cpp"
+},
+{
+  "directory": "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include -I/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/grpc  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -g -Wold-style-cast -std=gnu++14 -o CMakeFiles/flatbuffers.dir/src/idl_gen_text.cpp.o -c /home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/idl_gen_text.cpp",
+  "file": "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/idl_gen_text.cpp"
+},
+{
+  "directory": "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include -I/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/grpc  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -g -Wold-style-cast -std=gnu++14 -o CMakeFiles/flatbuffers.dir/src/reflection.cpp.o -c /home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/reflection.cpp",
+  "file": "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/reflection.cpp"
+},
+{
+  "directory": "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-build",
+  "command": "/usr/bin/c++ -DFLATBUFFERS_LOCALE_INDEPENDENT=1 -I/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/include -I/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/grpc  -std=c++0x -Wall -pedantic -Werror -Wextra -Werror=shadow -faligned-new -Werror=implicit-fallthrough=2 -Wunused-result -Werror=unused-result -Wunused-parameter -Werror=unused-parameter -fsigned-char -g -Wold-style-cast -std=gnu++14 -o CMakeFiles/flatbuffers.dir/src/util.cpp.o -c /home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/util.cpp",
+  "file": "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-src/src/util.cpp"
+}
+]

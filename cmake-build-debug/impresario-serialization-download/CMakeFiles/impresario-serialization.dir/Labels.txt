@@ -1,0 +1,14 @@
+# Target labels
+ impresario-serialization
+# Source files and their labels
+/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/CMakeFiles/impresario-serialization
+/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/CMakeFiles/impresario-serialization.rule
+/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/CMakeFiles/impresario-serialization-complete.rule
+/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-build.rule
+/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-configure.rule
+/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-download.rule
+/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-install.rule
+/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-mkdir.rule
+/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-patch.rule
+/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-test.rule
+/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-update.rule

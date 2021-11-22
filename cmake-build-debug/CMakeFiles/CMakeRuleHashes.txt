@@ -1,0 +1,13 @@
+# Hashes of file build rules.
+c1fabda6b5dbcce16052ad807240f295 flatbuffers-build/samples/monster.bfbs
+24c04d8b1134954ebd79b18a28b84cca flatbuffers-build/samples/monster_generated.h
+9515bd183de9b3de1176fe0e7a81baf8 flatbuffers-build/tests/arrays_test.bfbs
+48c38c6b16ee8dfef04b38abc602dc25 flatbuffers-build/tests/arrays_test_generated.h
+8699219a136ba9f9194b065f14df3ae5 flatbuffers-build/tests/monster_extra_generated.h
+c701c1d87299b96ca65f3219364bac6b flatbuffers-build/tests/monster_test.bfbs
+10cd9aefb9506fa123c91824c6b1bbbb flatbuffers-build/tests/monster_test_bfbs_generated.h
+c50a81be55fc3fb2f3dfcc3aaf5a9aeb flatbuffers-build/tests/monster_test_generated.h
+d8780a3869e2ac52050240e9cb8ac7b0 flatbuffers-build/tests/namespace_test/namespace_test1_generated.h
+88cf673fd2d694ade1f8a66759295230 flatbuffers-build/tests/namespace_test/namespace_test2_generated.h
+308bd0a33a2fc6caf6c4bb53dbd0feba flatbuffers-build/tests/native_type_test_generated.h
+559f31e7a1b59b101f1d8b1c1bbad3f4 flatbuffers-build/tests/union_vector/union_vector_generated.h

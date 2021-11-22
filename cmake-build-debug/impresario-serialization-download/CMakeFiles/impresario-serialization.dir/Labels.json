@@ -1,0 +1,46 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/CMakeFiles/impresario-serialization"
+		},
+		{
+			"file" : "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/CMakeFiles/impresario-serialization.rule"
+		},
+		{
+			"file" : "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/CMakeFiles/impresario-serialization-complete.rule"
+		},
+		{
+			"file" : "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-build.rule"
+		},
+		{
+			"file" : "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-configure.rule"
+		},
+		{
+			"file" : "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-download.rule"
+		},
+		{
+			"file" : "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-install.rule"
+		},
+		{
+			"file" : "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-mkdir.rule"
+		},
+		{
+			"file" : "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-patch.rule"
+		},
+		{
+			"file" : "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-test.rule"
+		},
+		{
+			"file" : "/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-update.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"impresario-serialization"
+		],
+		"name" : "impresario-serialization"
+	}
+}

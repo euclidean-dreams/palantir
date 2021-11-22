@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/flatbuffers-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/impresario-serialization-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/impresario-serialization-src/lib/cmake-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/impresario-utils-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-debug/impresario-utils-src/lib/cmake-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/lib/cmake-utils" vcs="Git" />
+  </component>
+</project>
