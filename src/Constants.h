@@ -3,8 +3,10 @@
 
 #define LOGGER_NAME "palantir"
 #define COSMOGRAPHER_ENDPOINT "ipc:///tmp/cosmographer_palantir"
-#define WINDOW_WIDTH 20
-#define WINDOW_HEIGHT 74
-#define PIXEL_SIZE 5
+#define LUMINARY_WIDTH 100
+#define LUMINARY_HEIGHT 74
+#define PIXEL_SIZE 10
+#define WINDOW_WIDTH LUMINARY_WIDTH * PIXEL_SIZE
+#define WINDOW_HEIGHT LUMINARY_HEIGHT * PIXEL_SIZE
 
 #endif //PALANTIR_CONSTANTS_H

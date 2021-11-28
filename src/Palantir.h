@@ -3,8 +3,8 @@
 
 #include <SDL.h>
 #include <ImpresarioUtils.h>
+#include "gizmo/Tchotchke.h"
 #include "Constants.h"
-#include "SDLFailure.h"
 
 namespace palantir {
 
@@ -13,8 +13,6 @@ private:
     std::unique_ptr<impresarioUtils::NetworkSocket> cosmographerSocket;
     SDL_Window *window;
     SDL_Renderer *renderer;
-
-    static void assertNotNull(void *entity);
 
     SDL_Texture *createTexture(const ImpresarioSerialization::Luminary *luminary);
 

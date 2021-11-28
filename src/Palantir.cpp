@@ -8,13 +8,14 @@ Palantir::Palantir(std::unique_ptr<impresarioUtils::NetworkSocket> cosmographerS
     if (initializationResult != 0) {
         throw SDLFailure{};
     }
-    window = SDL_CreateWindow("palantir", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WINDOW_WIDTH, WINDOW_HEIGHT,
+    window = SDL_CreateWindow("palantir", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WINDOW_WIDTH,
+                              WINDOW_HEIGHT,
                               0);
-    assertNotNull(window);
+    Tchotchke::assertNotNull(window);
 
     Uint32 rendererFlags = SDL_RENDERER_ACCELERATED | SDL_RENDERER_PRESENTVSYNC;
     renderer = SDL_CreateRenderer(window, -1, rendererFlags);
-    assertNotNull(renderer);
+    Tchotchke::assertNotNull(renderer);
 }
 
 Palantir::~Palantir() {
@@ -46,20 +47,32 @@ SDL_Texture *Palantir::createTexture(const ImpresarioSerialization::Luminary *lu
     blueMask = 0x00ff0000;
     alphaMask = 0xff000000;
 #endif
-    auto surface = SDL_CreateRGBSurface(0, WINDOW_WIDTH, WINDOW_HEIGHT, 32, redMask, greenMask, blueMask, alphaMask);
-    assertNotNull(surface);
+    auto surface = SDL_CreateRGBSurface(0, WINDOW_WIDTH, WINDOW_HEIGHT, 32, redMask, greenMask, blueMask,
+                                        alphaMask);
+    Tchotchke::assertNotNull(surface);
 
     auto glimpse = luminary->glimpse();
     auto pixels = (Uint32 *) surface->pixels;
-    for (int index = 0; index < surface->w * surface->h; index++) {
-        Uint8 red = (*glimpse)[index * 3];
-        Uint8 green = (*glimpse)[index * 3 + 1];
-        Uint8 blue = (*glimpse)[index * 3 + 2];
-        pixels[index] = SDL_MapRGBA(surface->format, red, green, blue, 255);
+    for (int luminaryIndex = 0; luminaryIndex < glimpse->size(); luminaryIndex++) {
+        auto glimpseColor = (*glimpse)[luminaryIndex];
+        auto surfaceColor = SDL_MapRGBA(surface->format, glimpseColor->red(), glimpseColor->green(),
+                                        glimpseColor->blue(), 255);
+        auto luminaryX = luminaryIndex % LUMINARY_WIDTH;
+        auto luminaryY = (int) std::floor(luminaryIndex / LUMINARY_WIDTH);
+        auto surfaceLowX = luminaryX * PIXEL_SIZE;
+        auto surfaceLowY = luminaryY * PIXEL_SIZE;
+        auto surfaceHighX = surfaceLowX + PIXEL_SIZE - 1;
+        auto surfaceHighY = surfaceLowY + PIXEL_SIZE - 1;
+        for (int y = surfaceLowY; y <= surfaceHighY; y++) {
+            for (int x = surfaceLowX; x <= surfaceHighX; x++) {
+                auto pixelIndex = WINDOW_WIDTH * y + x;
+                pixels[pixelIndex] = surfaceColor;
+            }
+        }
     }
 
     auto texture = SDL_CreateTextureFromSurface(renderer, surface);
-    assertNotNull(texture);
+    Tchotchke::assertNotNull(texture);
     SDL_FreeSurface(surface);
 
     return texture;
@@ -71,12 +84,6 @@ uint64_t Palantir::getTickInterval() {
 
 bool Palantir::finished() {
     return false;
-}
-
-void Palantir::assertNotNull(void *entity) {
-    if (entity == nullptr) {
-        throw SDLFailure{};
-    }
 }
 
 }
