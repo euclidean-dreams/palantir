@@ -19,7 +19,7 @@ set(
         src/gizmo/RGBColor.h
         src/Palantir.cpp src/Palantir.h
         src/Constants.h src/SDLFailure.h
-        src/gizmo/Tchotchke.cpp src/gizmo/Tchotchke.h)
+        src/gizmo/Tchotchke.cpp src/gizmo/Tchotchke.h src/percipient/CosmographerPercipient.cpp src/percipient/CosmographerPercipient.h)
 list(APPEND TARGETS palantir)
 add_executable(palantir src/main.cpp ${SOURCE_FILES})
 
@@ -30,4 +30,5 @@ foreach (target IN LISTS TARGETS)
     target_link_libraries(${target} PRIVATE zmq)
     target_link_libraries(${target} PRIVATE pthread)
     target_link_libraries(${target} PRIVATE ${SDL2_LIBRARIES})
+    target_link_libraries(${target} PRIVATE yaml-cpp)
 endforeach ()

@@ -6,18 +6,21 @@
 #include "gizmo/Tchotchke.h"
 #include "Constants.h"
 
+#define WINDOW_WIDTH GLIMPSE_WIDTH * PIXEL_SIZE
+#define WINDOW_HEIGHT GLIMPSE_HEIGHT * PIXEL_SIZE
+
 namespace palantir {
 
 class Palantir : public impresarioUtils::Circulable {
 private:
-    std::unique_ptr<impresarioUtils::NetworkSocket> cosmographerSocket;
+    std::shared_ptr<impresarioUtils::Arbiter<const impresarioUtils::Parcel>> glimpsology;
     SDL_Window *window;
     SDL_Renderer *renderer;
 
-    SDL_Texture *createTexture(const ImpresarioSerialization::Luminary *luminary);
+    SDL_Texture *createTexture(const ImpresarioSerialization::Glimpse *glimpse);
 
 public:
-    explicit Palantir(std::unique_ptr<impresarioUtils::NetworkSocket> cosmographerSocket);
+    explicit Palantir(std::shared_ptr<impresarioUtils::Arbiter<const impresarioUtils::Parcel>> glimpsology);
 
     ~Palantir() override;
 
