@@ -8,6 +8,8 @@ Palantir::Palantir(std::shared_ptr<impresarioUtils::Arbiter<const impresarioUtil
     if (initializationResult != 0) {
         throw SDLFailure{};
     }
+    SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_PING,"0");
+
     window = SDL_CreateWindow("palantir", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WINDOW_WIDTH,
                               WINDOW_HEIGHT,
                               0);

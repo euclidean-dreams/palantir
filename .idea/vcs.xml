@@ -7,6 +7,13 @@
     <mapping directory="$PROJECT_DIR$/cmake-build-debug/impresario-serialization-src/lib/cmake-utils" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cmake-build-debug/impresario-utils-src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/cmake-build-debug/impresario-utils-src/lib/cmake-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/flatbuffers-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/impresario-serialization-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/impresario-serialization-src/lib/cmake-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/impresario-utils-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/impresario-utils-src/lib/cmake-utils" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/spdlog-src" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/cmake-build-release/yaml-src" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/lib/cmake-utils" vcs="Git" />
   </component>
 </project>
