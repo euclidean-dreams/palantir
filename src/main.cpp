@@ -32,8 +32,6 @@ int bootstrap() {
             running = false;
     }
 
-    palantirThread->join();
-    cosmographerPercipientThread->join();
     return 0;
 }
 
