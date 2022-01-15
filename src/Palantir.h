@@ -11,7 +11,7 @@
 
 namespace palantir {
 
-class Palantir : public impresarioUtils::Circulable {
+class Palantir : public impresarioUtils::TickingCirculable {
 private:
     std::shared_ptr<impresarioUtils::Arbiter<const impresarioUtils::Parcel>> glimpsology;
     SDL_Window *window;

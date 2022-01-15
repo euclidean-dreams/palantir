@@ -22,7 +22,7 @@ int bootstrap() {
     auto cosmographerPercipientThread = impresarioUtils::Circlet::begin(move(cosmographerPercipient));
 
     auto palantirInstance = std::make_unique<Palantir>(move(glimpsology));
-    auto palantirThread = impresarioUtils::Circlet::begin(move(palantirInstance));
+    auto palantirThread = impresarioUtils::Circlet::beginTicking(move(palantirInstance));
 
     SDL_Event event;
     bool running = true;

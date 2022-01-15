@@ -16,10 +16,6 @@ void CosmographerPercipient::activate() {
     }
 }
 
-uint64_t CosmographerPercipient::getTickInterval() {
-    return 0;
-}
-
 bool CosmographerPercipient::finished() {
     return false;
 }

@@ -16,8 +16,6 @@ public:
 
     void activate() override;
 
-    uint64_t getTickInterval() override;
-
     bool finished() override;
 };
 
