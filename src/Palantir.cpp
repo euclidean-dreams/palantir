@@ -12,7 +12,7 @@ Palantir::Palantir(std::shared_ptr<impresarioUtils::Arbiter<const impresarioUtil
 
     window = SDL_CreateWindow("palantir", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WINDOW_WIDTH,
                               WINDOW_HEIGHT,
-                              0);
+                              SDL_WINDOW_BORDERLESS);
     Tchotchke::assertNotNull(window);
 
     Uint32 rendererFlags = SDL_RENDERER_ACCELERATED;
