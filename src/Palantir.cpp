@@ -2,17 +2,27 @@
 
 namespace palantir {
 
-Palantir::Palantir(std::shared_ptr<impresarioUtils::Arbiter<const impresarioUtils::Parcel>> glimpsology)
-        : glimpsology{move(glimpsology)} {
+Palantir::Palantir(
+        std::shared_ptr<Arbiter<const Parcel>> glimpsology,
+        Constants &constants
+) :
+        glimpsology{move(glimpsology)},
+        constants{constants},
+        windowWidth{constants.glimpseWidth * constants.pixelSize},
+        windowHeight{constants.glimpseHeight * constants.pixelSize} {
     auto initializationResult = SDL_Init(SDL_INIT_VIDEO);
     if (initializationResult != 0) {
         throw SDLFailure{};
     }
-    SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_PING,"0");
-
-    window = SDL_CreateWindow("palantir", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, WINDOW_WIDTH,
-                              WINDOW_HEIGHT,
-                              SDL_WINDOW_BORDERLESS);
+    SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_PING, "0");
+    if (constants.fullscreen) {
+        window = SDL_CreateWindow("palantir", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, windowWidth,
+                                  windowHeight,
+                                  SDL_WINDOW_BORDERLESS);
+    } else {
+        window = SDL_CreateWindow("palantir", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, windowWidth,
+                                  windowHeight, 0);
+    }
     Tchotchke::assertNotNull(window);
 
     Uint32 rendererFlags = SDL_RENDERER_ACCELERATED;
@@ -29,7 +39,7 @@ Palantir::~Palantir() {
 void Palantir::activate() {
     if (glimpsology->newDataAvailable()) {
         auto parcel = glimpsology->take();
-        auto glimpse = impresarioUtils::Unwrap::Glimpse(*parcel);
+        auto glimpse = Unwrap::Glimpse(*parcel);
         SDL_RenderClear(renderer);
         auto texture = createTexture(glimpse);
         SDL_RenderCopy(renderer, texture, nullptr, nullptr);
@@ -51,7 +61,7 @@ SDL_Texture *Palantir::createTexture(const ImpresarioSerialization::Glimpse *gli
     blueMask = 0x00ff0000;
     alphaMask = 0xff000000;
 #endif
-    auto surface = SDL_CreateRGBSurface(0, WINDOW_WIDTH, WINDOW_HEIGHT, 32, redMask, greenMask, blueMask,
+    auto surface = SDL_CreateRGBSurface(0, windowWidth, windowHeight, 32, redMask, greenMask, blueMask,
                                         alphaMask);
     Tchotchke::assertNotNull(surface);
 
@@ -61,15 +71,15 @@ SDL_Texture *Palantir::createTexture(const ImpresarioSerialization::Glimpse *gli
         auto glimpseColor = (*colors)[index];
         auto surfaceColor = SDL_MapRGBA(surface->format, glimpseColor->red(), glimpseColor->green(),
                                         glimpseColor->blue(), 255);
-        auto glimpseX = index % GLIMPSE_WIDTH;
-        auto glimpseY = (int) std::floor(index / GLIMPSE_WIDTH);
-        auto surfaceLowX = glimpseX * PIXEL_SIZE;
-        auto surfaceLowY = glimpseY * PIXEL_SIZE;
-        auto surfaceHighX = surfaceLowX + PIXEL_SIZE - 1;
-        auto surfaceHighY = surfaceLowY + PIXEL_SIZE - 1;
+        auto glimpseX = index % constants.glimpseWidth;
+        auto glimpseY = (int) std::floor(index / constants.glimpseWidth);
+        auto surfaceLowX = glimpseX * constants.pixelSize;
+        auto surfaceLowY = glimpseY * constants.pixelSize;
+        auto surfaceHighX = surfaceLowX + constants.pixelSize - 1;
+        auto surfaceHighY = surfaceLowY + constants.pixelSize - 1;
         for (int y = surfaceLowY; y <= surfaceHighY; y++) {
             for (int x = surfaceLowX; x <= surfaceHighX; x++) {
-                auto pixelIndex = WINDOW_WIDTH * y + x;
+                auto pixelIndex = windowWidth * y + x;
                 pixels[pixelIndex] = surfaceColor;
             }
         }

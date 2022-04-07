@@ -2,25 +2,27 @@
 #define PALANTIR_PALANTIR_H
 
 #include <SDL.h>
-#include <ImpresarioUtils.h>
+#include "Default.h"
 #include "gizmo/Tchotchke.h"
-#include "Constants.h"
-
-#define WINDOW_WIDTH GLIMPSE_WIDTH * PIXEL_SIZE
-#define WINDOW_HEIGHT GLIMPSE_HEIGHT * PIXEL_SIZE
 
 namespace palantir {
 
-class Palantir : public impresarioUtils::TickingCirculable {
+class Palantir : public TickingCirculable {
 private:
-    std::shared_ptr<impresarioUtils::Arbiter<const impresarioUtils::Parcel>> glimpsology;
+    std::shared_ptr<Arbiter<const Parcel>> glimpsology;
     SDL_Window *window;
     SDL_Renderer *renderer;
+    Constants &constants;
+    int windowWidth;
+    int windowHeight;
 
     SDL_Texture *createTexture(const ImpresarioSerialization::Glimpse *glimpse);
 
 public:
-    explicit Palantir(std::shared_ptr<impresarioUtils::Arbiter<const impresarioUtils::Parcel>> glimpsology);
+    explicit Palantir(
+            std::shared_ptr<Arbiter<const Parcel>> glimpsology,
+            Constants &constants
+    );
 
     ~Palantir() override;
 

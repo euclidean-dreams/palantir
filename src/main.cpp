@@ -1,7 +1,7 @@
 #include <zmq.hpp>
 #include <ImpresarioUtils.h>
 #include "percipient/CosmographerPercipient.h"
-#include "Constants.h"
+#include "framework/Constants.h"
 #include "Palantir.h"
 
 namespace palantir {
@@ -9,11 +9,12 @@ namespace palantir {
 int bootstrap() {
     std::string configFilePath = "./config.yml";
     impresarioUtils::Bootstrapper bootstrapper(configFilePath, 1);
+    Constants constants{};
 
     auto glimpsology = std::make_shared<impresarioUtils::Arbiter<const impresarioUtils::Parcel>>();
     auto cosmographerSocket = std::make_unique<impresarioUtils::NetworkSocket>(
             bootstrapper.getZmqContext(),
-            COSMOGRAPHER_ENDPOINT,
+            constants.cosmographerEndpoint,
             zmq::socket_type::sub,
             false
     );
@@ -21,7 +22,7 @@ int bootstrap() {
     auto cosmographerPercipient = std::make_unique<CosmographerPercipient>(move(cosmographerSocket), glimpsology);
     auto cosmographerPercipientThread = impresarioUtils::Circlet::begin(move(cosmographerPercipient));
 
-    auto palantirInstance = std::make_unique<Palantir>(move(glimpsology));
+    auto palantirInstance = std::make_unique<Palantir>(move(glimpsology), constants);
     auto palantirThread = impresarioUtils::Circlet::beginTicking(move(palantirInstance));
 
     SDL_Event event;

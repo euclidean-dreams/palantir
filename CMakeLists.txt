@@ -18,8 +18,11 @@ set(
         SOURCE_FILES
         src/gizmo/RGBColor.h
         src/Palantir.cpp src/Palantir.h
-        src/Constants.h src/SDLFailure.h
-        src/gizmo/Tchotchke.cpp src/gizmo/Tchotchke.h src/percipient/CosmographerPercipient.cpp src/percipient/CosmographerPercipient.h)
+        src/framework/Libs.h
+        src/framework/Constants.h src/SDLFailure.h
+        src/gizmo/Tchotchke.cpp src/gizmo/Tchotchke.h src/percipient/CosmographerPercipient.cpp src/percipient/CosmographerPercipient.h
+
+        src/framework/Framework.h src/Default.h)
 list(APPEND TARGETS palantir)
 add_executable(palantir src/main.cpp ${SOURCE_FILES})
 

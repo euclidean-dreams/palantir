@@ -1,0 +1,6 @@
+cosmographerEndpoint: "ipc:///tmp/cosmographer"
+glimpseWidth: 192
+glimpseHeight: 108
+pixelSize: 10
+fullscreen: true
+

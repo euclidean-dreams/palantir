@@ -1,9 +1,0 @@
-#ifndef PALANTIR_CONSTANTS_H
-#define PALANTIR_CONSTANTS_H
-
-#define COSMOGRAPHER_ENDPOINT "ipc:///tmp/cosmographer"
-#define GLIMPSE_WIDTH 96
-#define GLIMPSE_HEIGHT 54
-#define PIXEL_SIZE 20
-
-#endif //PALANTIR_CONSTANTS_H
