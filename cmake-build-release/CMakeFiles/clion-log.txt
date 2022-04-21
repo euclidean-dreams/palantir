@@ -1,0 +1,63 @@
+/home/josiah/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Release -G "CodeBlocks - Unix Makefiles" /home/josiah/projects/code/impresario-systems/palantir
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/josiah/projects/code/impresario-systems/palantir/cmake-build-release/impresario-utils-download
+[ 11%] Performing update step for 'impresario-utils'
+HEAD is now at e9154a8 fixed volitia percipient
+[ 22%] No patch step for 'impresario-utils'
+[ 33%] No configure step for 'impresario-utils'
+[ 44%] No build step for 'impresario-utils'
+[ 55%] No install step for 'impresario-utils'
+[ 66%] No test step for 'impresario-utils'
+[ 77%] Completed 'impresario-utils'
+[100%] Built target impresario-utils
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/josiah/projects/code/impresario-systems/palantir/cmake-build-release/impresario-serialization-download
+[ 11%] Performing update step for 'impresario-serialization'
+HEAD is now at 250e6a7 addded stft
+[ 22%] No patch step for 'impresario-serialization'
+[ 33%] No configure step for 'impresario-serialization'
+[ 44%] No build step for 'impresario-serialization'
+[ 55%] No install step for 'impresario-serialization'
+[ 66%] No test step for 'impresario-serialization'
+[ 77%] Completed 'impresario-serialization'
+[100%] Built target impresario-serialization
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/josiah/projects/code/impresario-systems/palantir/cmake-build-release/flatbuffers-download
+[ 11%] Performing update step for 'flatbuffers'
+[ 22%] No patch step for 'flatbuffers'
+[ 33%] No configure step for 'flatbuffers'
+[ 44%] No build step for 'flatbuffers'
+[ 55%] No install step for 'flatbuffers'
+[ 66%] No test step for 'flatbuffers'
+[ 77%] Completed 'flatbuffers'
+[100%] Built target flatbuffers
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/josiah/projects/code/impresario-systems/palantir/cmake-build-release/yaml-download
+[ 11%] Performing update step for 'yaml'
+[ 22%] No patch step for 'yaml'
+[ 33%] No configure step for 'yaml'
+[ 44%] No build step for 'yaml'
+[ 55%] No install step for 'yaml'
+[ 66%] No test step for 'yaml'
+[ 77%] Completed 'yaml'
+[100%] Built target yaml
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/josiah/projects/code/impresario-systems/palantir/cmake-build-release/spdlog-download
+[ 11%] Performing update step for 'spdlog'
+[ 22%] No patch step for 'spdlog'
+[ 33%] No configure step for 'spdlog'
+[ 44%] No build step for 'spdlog'
+[ 55%] No install step for 'spdlog'
+[ 66%] No test step for 'spdlog'
+[ 77%] Completed 'spdlog'
+[100%] Built target spdlog
+-- Build spdlog: 1.9.2
+-- Build type: Release
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/josiah/projects/code/impresario-systems/palantir/cmake-build-release
