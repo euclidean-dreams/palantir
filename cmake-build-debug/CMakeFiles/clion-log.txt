@@ -1,60 +1,147 @@
-/home/josiah/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/213.6777.58/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/josiah/projects/code/impresario-systems/palantir
+/snap/clion/189/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" -S /home/josiah/projects/code/impresario-systems/palantir -B /home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-download
-[ 11%] Performing update step for 'impresario-utils'
+[ 11%] Creating directories for 'impresario-utils'
+[ 22%] Performing download step (git clone) for 'impresario-utils'
+-- Avoiding repeated git clone, stamp file is up to date: '/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-utils-download/impresario-utils-prefix/src/impresario-utils-stamp/impresario-utils-gitclone-lastrun.txt'
+[ 33%] Performing update step for 'impresario-utils'
 HEAD is now at e9154a8 fixed volitia percipient
-[ 22%] No patch step for 'impresario-utils'
-[ 33%] No configure step for 'impresario-utils'
-[ 44%] No build step for 'impresario-utils'
-[ 55%] No install step for 'impresario-utils'
-[ 66%] No test step for 'impresario-utils'
-[ 77%] Completed 'impresario-utils'
+[ 44%] No patch step for 'impresario-utils'
+[ 55%] No configure step for 'impresario-utils'
+[ 66%] No build step for 'impresario-utils'
+[ 77%] No install step for 'impresario-utils'
+[ 88%] No test step for 'impresario-utils'
+[100%] Completed 'impresario-utils'
 [100%] Built target impresario-utils
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download
-[ 11%] Performing update step for 'impresario-serialization'
+[ 11%] Creating directories for 'impresario-serialization'
+[ 22%] Performing download step (git clone) for 'impresario-serialization'
+-- Avoiding repeated git clone, stamp file is up to date: '/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/impresario-serialization-download/impresario-serialization-prefix/src/impresario-serialization-stamp/impresario-serialization-gitclone-lastrun.txt'
+[ 33%] Performing update step for 'impresario-serialization'
 HEAD is now at 250e6a7 addded stft
-[ 22%] No patch step for 'impresario-serialization'
-[ 33%] No configure step for 'impresario-serialization'
-[ 44%] No build step for 'impresario-serialization'
-[ 55%] No install step for 'impresario-serialization'
-[ 66%] No test step for 'impresario-serialization'
-[ 77%] Completed 'impresario-serialization'
+[ 44%] No patch step for 'impresario-serialization'
+[ 55%] No configure step for 'impresario-serialization'
+[ 66%] No build step for 'impresario-serialization'
+[ 77%] No install step for 'impresario-serialization'
+[ 88%] No test step for 'impresario-serialization'
+[100%] Completed 'impresario-serialization'
 [100%] Built target impresario-serialization
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-download
-[ 11%] Performing update step for 'flatbuffers'
-[ 22%] No patch step for 'flatbuffers'
-[ 33%] No configure step for 'flatbuffers'
-[ 44%] No build step for 'flatbuffers'
-[ 55%] No install step for 'flatbuffers'
-[ 66%] No test step for 'flatbuffers'
-[ 77%] Completed 'flatbuffers'
+[ 11%] Creating directories for 'flatbuffers'
+[ 22%] Performing download step (git clone) for 'flatbuffers'
+-- Avoiding repeated git clone, stamp file is up to date: '/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/flatbuffers-download/flatbuffers-prefix/src/flatbuffers-stamp/flatbuffers-gitclone-lastrun.txt'
+[ 33%] Performing update step for 'flatbuffers'
+[ 44%] No patch step for 'flatbuffers'
+[ 55%] No configure step for 'flatbuffers'
+[ 66%] No build step for 'flatbuffers'
+[ 77%] No install step for 'flatbuffers'
+[ 88%] No test step for 'flatbuffers'
+[100%] Completed 'flatbuffers'
 [100%] Built target flatbuffers
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/yaml-download
-[ 11%] Performing update step for 'yaml'
-[ 22%] No patch step for 'yaml'
-[ 33%] No configure step for 'yaml'
-[ 44%] No build step for 'yaml'
-[ 55%] No install step for 'yaml'
-[ 66%] No test step for 'yaml'
-[ 77%] Completed 'yaml'
+[ 11%] Creating directories for 'yaml'
+[ 22%] Performing download step (git clone) for 'yaml'
+-- Avoiding repeated git clone, stamp file is up to date: '/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/yaml-download/yaml-prefix/src/yaml-stamp/yaml-gitclone-lastrun.txt'
+[ 33%] Performing update step for 'yaml'
+[ 44%] No patch step for 'yaml'
+[ 55%] No configure step for 'yaml'
+[ 66%] No build step for 'yaml'
+[ 77%] No install step for 'yaml'
+[ 88%] No test step for 'yaml'
+[100%] Completed 'yaml'
 [100%] Built target yaml
+-- The C compiler identification is GNU 9.4.0
+-- The CXX compiler identification is GNU 9.4.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
 -- Configuring done
 -- Generating done
 -- Build files have been written to: /home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/spdlog-download
-[ 11%] Performing update step for 'spdlog'
-[ 22%] No patch step for 'spdlog'
-[ 33%] No configure step for 'spdlog'
-[ 44%] No build step for 'spdlog'
-[ 55%] No install step for 'spdlog'
-[ 66%] No test step for 'spdlog'
-[ 77%] Completed 'spdlog'
+[ 11%] Creating directories for 'spdlog'
+[ 22%] Performing download step (git clone) for 'spdlog'
+-- Avoiding repeated git clone, stamp file is up to date: '/home/josiah/projects/code/impresario-systems/palantir/cmake-build-debug/spdlog-download/spdlog-prefix/src/spdlog-stamp/spdlog-gitclone-lastrun.txt'
+[ 33%] Performing update step for 'spdlog'
+[ 44%] No patch step for 'spdlog'
+[ 55%] No configure step for 'spdlog'
+[ 66%] No build step for 'spdlog'
+[ 77%] No install step for 'spdlog'
+[ 88%] No test step for 'spdlog'
+[100%] Completed 'spdlog'
 [100%] Built target spdlog
 -- Build spdlog: 1.9.2
 -- Build type: Debug

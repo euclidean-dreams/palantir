@@ -1,12 +1,12 @@
 # remote cosmographer
-#cosmographerEndpoint: "tcp://10.42.0.1:44447"
+#cosmographerEndpoint: "tcp://10.0.0.187:44448"
 cosmographerEndpoint: "ipc:///tmp/cosmographer"
 
 # fullscreen
 #glimpseWidth: 192
 #glimpseHeight: 108
 #pixelSize: 10
-#fullscreen: false
+#fullscreen: true
 
 # square
 glimpseWidth: 200
