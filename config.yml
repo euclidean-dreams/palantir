@@ -1,6 +1,6 @@
 # remote cosmographer
-cosmographerEndpoint: "tcp://clotho-spring:44442"
-#cosmographerEndpoint: "ipc:///tmp/cosmographer"
+#cosmographerEndpoint: "tcp://clotho-spring:44442"
+cosmographerEndpoint: "ipc:///tmp/cosmographer"
 
 # fullscreen
 glimpseWidth: 192
