@@ -11,6 +11,10 @@ CosmographerPercipient::CosmographerPercipient(std::unique_ptr<impresarioUtils::
 
 void CosmographerPercipient::activate() {
     auto parcel = socket->receiveParcel();
+    if(!receivedFirstGlimpse) {
+        LOGGER->info("received first glimpse!");
+        receivedFirstGlimpse = true;
+    }
     if (parcel->getIdentifier() == ImpresarioSerialization::Identifier::glimpse) {
         glimpsology->give(move(parcel));
     }

@@ -1,16 +1,16 @@
 # remote cosmographer
-#cosmographerEndpoint: "tcp://10.0.0.187:44448"
-cosmographerEndpoint: "ipc:///tmp/cosmographer"
+cosmographerEndpoint: "tcp://clotho-spring:44442"
+#cosmographerEndpoint: "ipc:///tmp/cosmographer"
 
 # fullscreen
-#glimpseWidth: 192
-#glimpseHeight: 108
-#pixelSize: 10
-#fullscreen: true
+glimpseWidth: 192
+glimpseHeight: 108
+pixelSize: 10
+fullscreen: true
 
 # square
-glimpseWidth: 200
-glimpseHeight: 200
-pixelSize: 5
-fullscreen: false
+# glimpseWidth: 200
+# glimpseHeight: 200
+# pixelSize: 5
+# fullscreen: false
 
