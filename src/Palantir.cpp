@@ -8,8 +8,8 @@ Palantir::Palantir(
 ) :
         glimpsology{move(glimpsology)},
         constants{constants},
-        windowWidth{constants.glimpseWidth * constants.pixelSize},
-        windowHeight{constants.glimpseHeight * constants.pixelSize} {
+        windowWidth{constants.percipiaWidth * constants.pixelSize},
+        windowHeight{constants.percipiaHeight * constants.pixelSize} {
     auto initializationResult = SDL_Init(SDL_INIT_VIDEO);
     if (initializationResult != 0) {
         throw SDLFailure{};
@@ -71,8 +71,8 @@ SDL_Texture *Palantir::createTexture(const ImpresarioSerialization::Glimpse *gli
         auto glimpseColor = (*colors)[index];
         auto surfaceColor = SDL_MapRGBA(surface->format, glimpseColor->red(), glimpseColor->green(),
                                         glimpseColor->blue(), 255);
-        auto glimpseX = index % constants.glimpseWidth;
-        auto glimpseY = (int) std::floor(index / constants.glimpseWidth);
+        auto glimpseX = index % constants.percipiaWidth;
+        auto glimpseY = (int) std::floor(index / constants.percipiaWidth);
         auto surfaceLowX = glimpseX * constants.pixelSize;
         auto surfaceLowY = glimpseY * constants.pixelSize;
         auto surfaceHighX = surfaceLowX + constants.pixelSize - 1;

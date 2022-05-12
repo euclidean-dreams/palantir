@@ -6,15 +6,14 @@
 
 namespace palantir {
 
-int bootstrap() {
-    std::string configFilePath = "./config.yml";
+int bootstrap(std::string configFilePath) {
     impresarioUtils::Bootstrapper bootstrapper(configFilePath, 1);
     Constants constants{};
 
     auto glimpsology = std::make_shared<impresarioUtils::Arbiter<const impresarioUtils::Parcel>>();
     auto cosmographerSocket = std::make_unique<impresarioUtils::NetworkSocket>(
             bootstrapper.getZmqContext(),
-            constants.cosmographerEndpoint,
+            constants.percipiaEndpoint,
             zmq::socket_type::sub,
             false
     );
@@ -38,6 +37,14 @@ int bootstrap() {
 
 }
 
-int main() {
-    return palantir::bootstrap();
+int main(int argc, char *argv[]) {
+    std::string configFilePath;
+    if (argc == 1) {
+        configFilePath = "./config.yml";
+    } else if (argc == 2) {
+        configFilePath = argv[1];
+    } else {
+        return 1;
+    }
+    return palantir::bootstrap(configFilePath);
 }

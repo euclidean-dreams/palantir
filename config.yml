@@ -1,16 +1,6 @@
-# remote cosmographer
-#cosmographerEndpoint: "tcp://clotho-spring:44442"
-cosmographerEndpoint: "ipc:///tmp/cosmographer"
+percipiaEndpoint: ipc:///tmp/percipia
 
-# fullscreen
-glimpseWidth: 192
-glimpseHeight: 108
+percipiaWidth: 192
+percipiaHeight: 108
 pixelSize: 10
 fullscreen: true
-
-# square
-# glimpseWidth: 200
-# glimpseHeight: 200
-# pixelSize: 5
-# fullscreen: false
-
