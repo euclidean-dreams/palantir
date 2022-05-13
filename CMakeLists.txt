@@ -23,8 +23,8 @@ set(
         src/gizmo/Tchotchke.cpp src/gizmo/Tchotchke.h src/percipient/CosmographerPercipient.cpp src/percipient/CosmographerPercipient.h
 
         src/framework/Framework.h src/Default.h)
-list(APPEND TARGETS palantir)
-add_executable(palantir src/main.cpp ${SOURCE_FILES})
+list(APPEND TARGETS euclid)
+add_executable(euclid src/main.cpp ${SOURCE_FILES})
 
 # finalize
 foreach (target IN LISTS TARGETS)

@@ -16,11 +16,11 @@ Palantir::Palantir(
     }
     SDL_SetHint(SDL_HINT_VIDEO_X11_NET_WM_PING, "0");
     if (constants.fullscreen) {
-        window = SDL_CreateWindow("palantir", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, windowWidth,
+        window = SDL_CreateWindow("euclid", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, windowWidth,
                                   windowHeight,
                                   SDL_WINDOW_BORDERLESS);
     } else {
-        window = SDL_CreateWindow("palantir", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, windowWidth,
+        window = SDL_CreateWindow("euclid", SDL_WINDOWPOS_UNDEFINED, SDL_WINDOWPOS_UNDEFINED, windowWidth,
                                   windowHeight, 0);
     }
     Tchotchke::assertNotNull(window);
