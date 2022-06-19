@@ -32,6 +32,7 @@ int bootstrap(std::string configFilePath) {
             running = false;
     }
 
+    cosmographerPercipientThread->join();
     return 0;
 }
 
