@@ -32,7 +32,6 @@ int bootstrap(std::string configFilePath) {
             running = false;
     }
 
-    cosmographerPercipientThread->join();
     return 0;
 }
 
@@ -41,7 +40,7 @@ int bootstrap(std::string configFilePath) {
 int main(int argc, char *argv[]) {
     std::string configFilePath;
     if (argc == 1) {
-        configFilePath = "./config.yml";
+        configFilePath = "./palantir.yml";
     } else if (argc == 2) {
         configFilePath = argv[1];
     } else {
